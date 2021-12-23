@@ -62,6 +62,7 @@ public static void Main()
                        Console.WriteLine($@"Управление программой:
                        change - для смены выполняемой операции (+; -; *; /);
                        total - для просмотра результатов;
+                       help - справка по возможным командам управления;
                        quit - для завершения программы.");
                        Console.WriteLine();
                        Console.WriteLine ($@"Выберите действие, которые хотите проверить:
@@ -79,21 +80,23 @@ public static void Main()
                Console.WriteLine($@"Всего вопросов на {userAction}-ие: {totalQuiestionsCurrentTest}.");       
                Console.WriteLine($@"   Верных ответов : {checkTrueCurrentTest}.");
                Console.WriteLine($@"   Неверных ответов: {checkFalseCurrentTest}.");
-               Console.WriteLine();
+               Console.WriteLine($@"Нажмите Enter для продолжения выполнения теста на выбранную операцию "); 
+               Console.ReadLine();
            break;
        case "help":
            Console.WriteLine($@"Управление программой:
                        change - для смены выполняемой операции (+; -; *; /);
                        total - для просмотра результатов;
                        quit - для завершения программы.");
-                       Console.WriteLine();
+            Console.WriteLine($@"Нажмите Enter для продолжения выполнения теста на выбранную операцию "); 
+               Console.ReadLine();
            break;
-       case "quit":
+/*       case "quit":
            break;
        default:
            Console.WriteLine("Введенная команда не распознана!");
            Console.WriteLine();
-           break;
+           break;*/
      }
     
     // OUTPUT TOTAL STATISTICS    

@@ -91,12 +91,6 @@ public static void Main()
             Console.WriteLine($@"Нажмите Enter для продолжения выполнения теста на выбранную операцию "); 
                Console.ReadLine();
            break;
-/*       case "quit":
-           break;
-       default:
-           Console.WriteLine("Введенная команда не распознана!");
-           Console.WriteLine();
-           break;*/
      }
     
     // OUTPUT TOTAL STATISTICS    
@@ -133,11 +127,6 @@ public static void Main()
       Console.WriteLine ($"Вы ответили ВЕРНО!");
       Console.WriteLine();
       Console.WriteLine("Нажмите любую клавишу для выполнения следующей тренировки по той же операции. Или введите одну из команд управления(change, total, quit)");
-    /*  quit = Console.ReadLine ();
-      Console.WriteLine();
-      change = quit;
-      total = quit;
-      endFirstCycle = 1;*/
       checkTrueCurrentTest ++;
       checkTrueTotalTest++;
     }
@@ -146,11 +135,6 @@ public static void Main()
       Console.WriteLine ($"Вы ответили НЕ верно! Верный результат {resultValue}");
       Console.WriteLine();
       Console.WriteLine("Нажмите любую клавишу для выполнения следующей тренировки по той же операции. Или введите одну из команд управления(change, total, quit)");
-   /*   quit = Console.ReadLine ();
-      Console.WriteLine();
-      change = quit;
-      total = quit;
-      endFirstCycle = 1;*/
       checkFalseCurrentTest++;
       checkFalseTotalTest++;
     }

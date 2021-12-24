@@ -40,7 +40,7 @@ public static void Main()
                if (endFirstCycle == 1)
                {   
                    Console.WriteLine ($@"Выберите действие, которые хотите проверить:
-                   +; -; *; /.
+                   +; -; *.
           
            На выбранное действие будет предложена проверка по соответствующей таблице.");
                    Console.WriteLine();
@@ -60,13 +60,13 @@ public static void Main()
                    else
                    {
                        Console.WriteLine($@"Управление программой:
-                       change - для смены выполняемой операции (+; -; *; /);
+                       change - для смены выполняемой операции (+; -; *);
                        total - для просмотра результатов;
                        help - справка по возможным командам управления;
                        quit - для завершения программы.");
                        Console.WriteLine();
                        Console.WriteLine ($@"Выберите действие, которые хотите проверить:
-                       +; -; *; /.
+                       +; -; *.
            На выбранное действие будет предложена проверка по соответствующей таблице.");
                        Console.WriteLine();           
                        userAction = char.Parse(Console.ReadLine());
@@ -85,7 +85,7 @@ public static void Main()
            break;
        case "help":
            Console.WriteLine($@"Управление программой:
-                       change - для смены выполняемой операции (+; -; *; /);
+                       change - для смены выполняемой операции (+; -; *);
                        total - для просмотра результатов;
                        quit - для завершения программы.");
             Console.WriteLine($@"Нажмите Enter для продолжения выполнения теста на выбранную операцию "); 
@@ -116,10 +116,10 @@ public static void Main()
         resultValue = firstValue * secondValue;
         totalQuestionsMultiply++;
         break;
-       case '/':
+       /*case '/':
         resultValue = firstValue / secondValue;
         totalQuestionsDivision++;
-        break;
+        break;*/
      }
  
     if (resultValue == userResultValue)
